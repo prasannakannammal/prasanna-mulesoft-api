@@ -10,7 +10,6 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="prasanna-mulesoft-apiFlow" doc:id="f13e1375-e758-490b-8e54-0e9abb7f9cd9" >
 		<http:listener doc:name="Listener" doc:id="bfecf7f3-4825-47d5-9630-047262940f97" config-ref="HTTP_Listener_config" path="/demo"/>
-		<logger level="INFO" doc:name="Logger" doc:id="8860274a-5074-4f64-ac12-759322bfd575" message='#["Process Started"]' category="AFTER THE LISTENER==================================================&gt;"/>
 		<ee:transform doc:name="Transform Message" doc:id="1e9d8aee-28a8-40b1-824b-fcdf4cfd0d9c" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
